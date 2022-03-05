@@ -1,0 +1,37 @@
+.sidenav-container {
+  height: 100%;
+  width: 200px;
+  background-color: #253343;
+}
+
+.sidenav-container {
+  min-width: 75px;
+  height: 100%;
+
+  &__nav-list-wrapper {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__nav-list {
+    &__item {
+      color: #849db3;
+      &:focus,
+      &:hover {
+        color: white;
+
+        &::before {
+          content: "";
+          width: 4px;
+          height: 48px;
+          position: absolute;
+          left: 0px;
+          top: 0px;
+        }
+      }
+    }
+  }
+}

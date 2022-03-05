@@ -1,0 +1,35 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.login-wrapper {
+  width: 400px;
+  align-items: center;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__actions {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__actions-button {
+    background-color: #6074f1;
+    color: white;
+  }
+
+  &__hint {
+    margin: 0;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
